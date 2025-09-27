@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Force 007 Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖤 Black Force 007 Quiz 🖤</h1>
+            <button id="theme-toggle">🌙 ডার্ক/লাইট মোড</button>
+        </header>
+
+        <div id="quiz-container">
+            <div id="question-box">
+                <div id="question"></div>
+                <div id="options"></div>
+            </div>
+            <div id="timer-box">
+                সময় বাকি: <span id="timer">15</span> সেকেন্ড
+            </div>
+            <div id="score-box">
+                স্কোর: <span id="score">0</span>
+            </div>
+            <div id="feedback"></div>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h2>আপনার ফলাফল</h2>
+            <p>স্কোর: <span id="final-score"></span></p>
+            <p>সঠিক উত্তর: <span id="correct-count"></span></p>
+            <p>ভুল উত্তর: <span id="wrong-count"></span></p>
+            <button id="restart">পুনরায় শুরু করুন</button>
+        </div>
+
+        <div id="leaderboard-container">
+            <h2>🏆 Leaderboard</h2>
+            <ol id="leaderboard-list"></ol>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
